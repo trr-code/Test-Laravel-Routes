@@ -60,7 +60,7 @@ Route::group(['middleware' => 'auth'], function() {
         // Add ONE line to assign 7 resource routes to TaskController
         // Put one code line here below
         Route::resource('tasks', TaskController::class);
-    // End of the /app Route Group
+    }); // End of the /app Route Group
 
 
     // Task 9: /admin group within a group
@@ -80,9 +80,8 @@ Route::group(['middleware' => 'auth'], function() {
         // Put one code line here below
         Route::get('/stats', StatsController::class);
 
-    // End of the /admin Route Group
-
-// End of the main Authenticated Route Group
+    });  // End of the /admin Route Group
+});// End of the main Authenticated Route Group
 
 // One more task is in routes/api.php
 
